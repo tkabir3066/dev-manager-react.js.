@@ -38,7 +38,16 @@ function AddContact({ addContact }) {
 
     //form submission
     addContact(contact);
-    // setContact("");
+    setContact({
+      firstName: "",
+      lastName: "",
+      email: "",
+      profession: "",
+      gender: "male",
+      dateOfBirth: new Date(),
+      image: "",
+      bio: "",
+    });
   };
   return (
     <>
